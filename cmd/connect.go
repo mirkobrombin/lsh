@@ -23,8 +23,7 @@ func connectCmdRun(cmd *cobra.Command, args []string) {
 
 	if err != nil {
 		if strings.Contains(bookmarkName, "@") {
-			fmt.Println("Detected a connection string.")
-			saveBookmark := core.AskYesNo("Do you want to save it as a bookmark? (y/n): ")
+			saveBookmark := core.AskYesNo("Detected a connection string. Do you want to save it as a bookmark? (y/n): ")
 			if saveBookmark {
 				fmt.Print("Enter a name for the bookmark: ")
 				fmt.Scanln(&bookmarkName)
