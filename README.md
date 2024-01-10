@@ -31,7 +31,7 @@ which will be used to save the connection details.
 You can use any SSH compatible connection string, for example:
 
 ```
-lsh connect user@host:port
+lsh connect -- user@host:port
 ```
 
 the full connection string will be stored in the bookmark.
