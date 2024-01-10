@@ -4,7 +4,12 @@ designed for lazy humans like me.
 
 ## Installation
 - Download latest release
-- Extract the `lsh` binary to `/usr/local/bin` or any other directory in your `$PATH`
+- Extract the `lsh` binary to `~/local/bin` or any other directory in your `$PATH`
+
+### Installation for lazy humans
+```
+curl -sL https://github.com/mirkobrombin/LSH/releases/latest/download/lsh -o ~/.local/bin/lsh && chmod +x ~/.local/bin/lsh && echo "Installation done, start using LSH by typing lsh and remember there's nothing wrong with being lazy 🥱!"
+```
 
 ## Usage
 ```
