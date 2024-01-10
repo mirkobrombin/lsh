@@ -21,11 +21,8 @@ jobs:
       - name: Build
         run: go build -o lsh
 
-      - name: Compress
-        run: tar -czvf lsh.tar.gz lsh
-
       - uses: softprops/action-gh-release@v1
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
           files: |
-            lsh.tar.gz
+            lsh
